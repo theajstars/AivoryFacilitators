@@ -1,0 +1,99 @@
+.live-classes-container {
+}
+.live-classes-jumbo {
+  background: url("../../../IMG/LiveVideoTemplate.png");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+.live-class-icon {
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--red-primary);
+}
+.no-live-class-card {
+  background-color: var(--blue-pale);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 0px;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.no-live-class-left {
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.no-live-class-header {
+  font-family: AileronHeavy;
+  font-size: 22px;
+}
+.schedule-live-class-button {
+  margin: 0px;
+}
+.no-live-class-card img {
+  width: 120px;
+  height: 120px;
+}
+
+.add-training-button {
+  background-color: var(--red-primary);
+  color: white;
+  font-family: AileronRegular;
+  border-radius: 7px;
+  width: 180px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-training-button:hover {
+  opacity: 0.8;
+}
+.add-tools-taught-header {
+  font-size: 17px;
+}
+.delete-training-btn {
+  background-color: transparent;
+  color: var(--red-primary);
+  border: 1px solid var(--red-primary);
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+.live-training-btn-row {
+  align-items: center;
+}
+.live-training-title-row {
+  align-items: center;
+}
+.live-training-radio-container {
+  margin-right: 5px;
+}
+
+.live-training-radio {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.required-text-red {
+  color: var(--red-primary);
+}
+@media screen and (max-width: 450px) {
+  div.no-live-class-card {
+    height: 190px;
+  }
+}

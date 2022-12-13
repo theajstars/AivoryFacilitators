@@ -1,0 +1,51 @@
+.dashboard-upcoming-events-container {
+  margin-top: 30px;
+  height: fit-content;
+  justify-content: space-between;
+}
+.dashboard-upcoming-events-head {
+  color: var(--red-primary);
+  font-size: 20px !important;
+}
+
+.dashboard-upcoming-events {
+  margin-top: 20px;
+  height: fit-content;
+  justify-content: space-between;
+}
+.dashboard-upcoming-event {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+.dashboard-upcoming-event:first-child {
+  margin-top: 0px;
+}
+.dashboard-upcoming-event-date {
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+}
+.dashboard-upcoming-event-month {
+  font-size: 16px;
+}
+.dashboard-upcoming-event-day {
+  font-size: 21px;
+  font-family: AileronBold;
+}
+.dashboard-upcoming-event-details {
+  max-width: 70%;
+  margin-left: 6px;
+  box-sizing: border-box;
+}
+.dashboard-upcoming-event-title {
+  font-family: AileronSemiBold;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.dashboard-upcoming-event-body {
+  font-size: 14px;
+}

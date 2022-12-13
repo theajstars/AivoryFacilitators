@@ -1,0 +1,146 @@
+.auth-body-container {
+  align-items: center;
+}
+.auth-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  justify-content: space-between;
+  height: fit-content;
+  align-items: flex-start;
+  padding: 20px;
+  width: 320px;
+}
+.login-container {
+  height: 490px;
+}
+.signup-container {
+  height: 550px;
+}
+.reset-password-container {
+  height: 320px;
+}
+.auth-logo {
+  height: 45px;
+}
+.auth-header {
+  font-family: AileronSemiBold;
+  font-size: 21px;
+  font-weight: bold;
+}
+.auth-input-row {
+  justify-content: space-between;
+}
+.auth-input-row > .auth-input-container {
+  width: 47%;
+}
+.auth-input-container {
+  outline: none;
+  border: 1.5px solid var(--blue-dark);
+  border-radius: 7px;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.auth-input-icon {
+  font-size: 16px;
+  color: var(--blue-dark);
+  /* padding: 8px; */
+}
+.password-eye {
+  padding-right: 8px;
+  cursor: pointer;
+}
+.password-eye:hover {
+  opacity: 0.9;
+}
+.auth-input {
+  outline: none;
+  padding-left: 15px;
+  border: none;
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  font-family: AileronRegular;
+  color: var(--blue-dark);
+  border-radius: 7px;
+}
+.auth-input:-webkit-autofill,
+.auth-input:-webkit-autofill:hover,
+.auth-input:-webkit-autofill:focus,
+.auth-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 35px white inset !important;
+}
+.auth-input::placeholder {
+  color: var(--blue-faint-text);
+  font-family: AileronThin;
+}
+.auth-options {
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+.auth-options-item {
+  align-items: center;
+}
+.form-text {
+  font-size: 14px;
+  color: var(--blue-dark);
+}
+.auth-btn {
+  width: 100%;
+  outline: none;
+  font-family: AileronThin;
+  font-size: 16px;
+  border-radius: 6px;
+  height: 43px;
+  cursor: pointer;
+  transition-duration: 0.12s;
+}
+.auth-btn:hover {
+  opacity: 0.8;
+}
+.auth-action-btn {
+  color: white;
+  background-color: var(--red-primary);
+  border: 1px solid var(--red-primary);
+}
+.mentor-auth-container {
+  height: 300px;
+}
+.mentor-auth-signup-button {
+  background-color: white;
+  color: var(--red-primary);
+  font-weight: 700;
+  border: 2px solid var(--red-primary);
+}
+.auth-google-btn {
+  color: var(--blue-dark);
+  background-color: transparent;
+  border: 1px solid var(--blue-dark);
+  align-items: center;
+  justify-content: center;
+}
+.auth-google-btn-icon {
+  transform: scale(0.7);
+}
+.is-sending-password-link {
+  /* text-align: center; */
+  width: 100%;
+  font-size: 16px;
+}
+
+.verification-container {
+  align-items: center;
+}
+.verification-text {
+  font-size: 15px;
+  color: var(--blue-dark);
+}

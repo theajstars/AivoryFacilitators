@@ -1,0 +1,42 @@
+.dashboard-date-container {
+  margin: 30px 0px;
+  margin-top: 100px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  height: 290px;
+  border-radius: 20px;
+}
+.dashboard-calendar-title {
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-calendar-head {
+  font-family: AileronSemiBold;
+  font-size: 17px;
+}
+.dashboard-calendar-icons {
+  width: 60px;
+  justify-content: space-between;
+}
+.dashboard-calendar-icon {
+  cursor: pointer;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-dark);
+  transition-duration: 0.12s;
+}
+.dashboard-calendar-icon:hover {
+  background-color: var(--blue-pale);
+}
+.dashboard-calendar-days {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: AileronRegular;
+}

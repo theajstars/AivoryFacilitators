@@ -1,0 +1,141 @@
+.mentors-container {
+  width: 100%;
+}
+.mentors-screen-row {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.mentors-screen-column {
+  width: 49%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.mentors-column {
+  margin-top: 20px;
+  background-color: var(--blue-pale);
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  padding-top: 0px;
+}
+.mentor-row {
+  width: 100%;
+  background-color: var(--blue-pale);
+  padding: 10px 0px;
+  height: 170px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #353965;
+  align-items: center;
+}
+.mentor-row:last-child {
+  border: none;
+}
+.mentor-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.mentor-row-right {
+  height: 120px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.mentor-row-text {
+  font-size: 13.5px;
+  text-align: justify;
+  margin-left: 10px;
+  height: fit-content;
+}
+.mentor-row-buttons {
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.mentor-row-button-1,
+.mentor-row-button-2 {
+  border-radius: 6px;
+  outline: none;
+  height: 35px;
+  font-family: AileronRegular;
+  cursor: pointer;
+  border: 2px solid var(--red-primary);
+}
+.mentor-row-button-1 {
+  margin-right: 10px;
+  background-color: var(--red-primary);
+  color: white;
+}
+.mentor-row-button-2 {
+  background-color: transparent;
+  color: var(--red-primary);
+}
+
+.available-sessions-header {
+  color: var(--blue-faint-text);
+}
+.mentor-screen-right {
+  padding-top: 20px;
+  justify-content: space-between;
+  height: -webkit-fill-available;
+}
+.mentors-how-it-works {
+  background-color: var(--blue-pale);
+  /* height: 100px; */
+  border-radius: 20px;
+  padding: 20px 10px;
+  height: 200px;
+}
+.how-it-works-text {
+  height: fit-content;
+  font-size: 14.5px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.mentor-already-scheduled {
+  background-color: var(--blue-pale);
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 150px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.mentor-already-scheduled-left {
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.view-mentor-training-button {
+  font-size: 15px;
+  font-family: AileronRegular;
+  color: var(--red-primary);
+  border: 2pt solid var(--red-primary);
+  outline: none;
+  width: fit-content;
+  padding: 6px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mentor-dashboard-profile-bottom {
+  min-height: 350px;
+  justify-content: space-between;
+}
+.mentor-dashboard-bio {
+  border: 2px solid var(--blue-dark);
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 280px;
+  overflow-y: scroll;
+  font-family: AileronRegular;
+  height: 200px;
+}
+.mentor-dashboard-input {
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.send-student-invitation-container {
+  margin: 10px 0px;
+}
+.send-student-invitation-container input {
+  width: 280px;
+}
+.training-help-container{
+  padding: 30px;
+  box-sizing: border-box;
+}

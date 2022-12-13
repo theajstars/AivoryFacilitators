@@ -1,0 +1,70 @@
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+.mentor-profile-modal-container {
+  position: fixed;
+  z-index: 99999999999;
+  width: 600px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -300px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 20px;
+}
+.mentor-profile-modal-top {
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  background-color: white;
+}
+.mentor-profile-modal-image {
+  height: 80px;
+  border-radius: 10px;
+}
+.mentor-profile-top-right {
+  margin-left: 15px;
+  height: 100%;
+  justify-content: space-between;
+}
+.mentor-profile-modal-name {
+  font-size: 25px;
+  font-family: AileronSemiBold;
+  color: var(--blue-dark);
+  text-transform: capitalize;
+}
+.mentor-profile-modal-position,
+.mentor-profile-modal-tag {
+  font-size: 16px;
+  color: var(--blue-dark);
+}
+.mentor-profile-modal-summary {
+  border-radius: 0px 0px 20px 20px;
+  background-color: white;
+  height: -webkit-fill-available;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 25px;
+  overflow-y: scroll;
+}
+.mentor-profile-modal-link {
+  color: var(--blue-faint-text);
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 650px) {
+  div.mentor-profile-modal-container {
+    width: 86vw;
+    margin-left: -43vw;
+    /* top: 35%; */
+    margin-top: -250px;
+    height: 500px;
+  }
+}

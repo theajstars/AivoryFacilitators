@@ -1,0 +1,15 @@
+@media screen and (max-width: 1300px) {
+  span.toggle-dashboard-right-nav {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 940px) {
+  span.toggle-dashboard-right-nav {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 940px) {
+  span.toggle-dashboard-right-nav {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+@media screen and (max-width: 1240px) {
+  div.training-overview {
+    width: 160px;
+  }
+  div.course-overview-card {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 960px) {
+  div.course-overview-card {
+    height: 255px;
+  }
+  div.course-overview-card-top {
+    flex-direction: column;
+  }
+  span.course-overview-card-title {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.mentor-overview-row {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  div.mentor-overview-item {
+    margin: 20px 0px;
+    width: 340px;
+  }
+  div.mentor-overview-item img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.trainings-overview {
+    flex-direction: column;
+  }
+  div.training-overview {
+    margin: 10px 0px;
+    width: 100%;
+  }
+  div.courses-overview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.course-overview-card {
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0px;
+  }
+  span.course-overview-card-title {
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  div.course-overview-card > span.dashboard-text-normal {
+    padding-bottom: 10px;
+  }
+}

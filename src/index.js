@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+import Auth from "./Components/Auth/Auth";
+import Dashboard from "./Components/Auth/Dashboard/Dashboard";
+import Courses from "./Components/Auth/Dashboard/DashboardComponents/Courses";
+import Facilitators from "./Components/Auth/Dashboard/DashboardComponents/Facilitators";
+import Help from "./Components/Auth/Dashboard/DashboardComponents/Help";
+import LiveClasses from "./Components/Auth/Dashboard/DashboardComponents/LiveClasses";
+import Mentors from "./Components/Auth/Dashboard/DashboardComponents/Mentors";
+import Overview from "./Components/Auth/Dashboard/DashboardComponents/Overview";
+import Profile from "./Components/Auth/Dashboard/DashboardComponents/Profile";
+import Settings from "./Components/Auth/Dashboard/DashboardComponents/Settings";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/auth" element={<Auth />} />
+      <Route path="dashboard" element={<Dashboard />}>
+        <Route index path="overview" element={<Overview />} />
+        <Route path="help" element={<Help />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="live" element={<LiveClasses />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="mentors" element={<Mentors />} />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        <Route path="facilitators" element={<Facilitators />} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
+    </Routes>
+  </Router>
+);

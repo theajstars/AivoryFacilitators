@@ -1,0 +1,137 @@
+.students-screen-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+.students-screen-top {
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.students-screen-top-col {
+  width: 47%;
+  box-sizing: border-box;
+}
+.students-screen-header {
+  font-family: AileronBold;
+  font-size: 23px;
+  color: var(--blue-dark);
+}
+
+.mentors-table {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.mentors-table-top {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  background: #ccd2ff;
+  border-radius: 10px 10px 0px 0px;
+  padding: 7px 10px;
+}
+.mentors-table-head {
+  color: #353965;
+  font-size: 13px;
+}
+.mentors-table-content {
+  width: 100%;
+  box-sizing: border-box;
+  background: #e4e7ff;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 10px;
+}
+
+.mentors-table-mentor {
+  justify-content: space-between;
+  border-bottom: 1px solid #81839f;
+  padding: 7px 0px;
+  font-size: 14px;
+}
+.mentor-table-mentor-name {
+  text-transform: capitalize;
+}
+.mentors-table-mentor:last-child {
+  border: none;
+}
+.mentor-table-delete-mentor {
+  cursor: pointer;
+  color: #81839f;
+}
+.mentor-table-delete-mentor:hover {
+  color: var(--blue-dark);
+}
+
+.students-screen-bottom {
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+.students-screen-bottom-left {
+  width: 48%;
+}
+.students-screen-bottom-right {
+  width: 48%;
+}
+.students-screen-button {
+  background-color: var(--blue-dark);
+  color: white;
+  font-size: 15px;
+  width: fit-content;
+  height: 35px;
+  padding: 0px 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.students-screen-button:hover {
+  opacity: 0.85;
+}
+
+.copy-token {
+  background-color: white;
+  align-items: center;
+}
+.token-string {
+  font-size: 18px;
+  letter-spacing: 7px;
+}
+.copy-token-string-button {
+  border: 1px solid var(--blue-dark);
+  height: 30px;
+  width: 90px;
+  margin-left: 20px;
+  border-radius: 6px;
+  font-family: AileronSemiBold;
+  cursor: pointer;
+  background-color: white;
+  transition-duration: 0.12s;
+}
+.copy-token-string-button:hover {
+  background-color: var(--blue-dark);
+  color: white;
+}
+.copy-token-string-button:active {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 650px) {
+  div.students-screen-bottom,
+  div.students-screen-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.students-screen-top-col,
+  div.students-screen-bottom-left,
+  div.students-screen-bottom-right {
+    width: 100%;
+  }
+
+  div.students-screen-bottom-right {
+    margin-top: 40px;
+  }
+}

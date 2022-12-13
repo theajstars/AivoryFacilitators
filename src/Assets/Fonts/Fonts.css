@@ -1,0 +1,24 @@
+@font-face {
+  font-family: AileronRegular;
+  src: url("./aileron/Aileron-Regular.otf");
+}
+@font-face {
+  font-family: AileronBlack;
+  src: url("./aileron/Aileron-Black.otf");
+}
+@font-face {
+  font-family: AileronSemiBold;
+  src: url("./aileron/Aileron-SemiBold.otf");
+}
+@font-face {
+  font-family: AileronBold;
+  src: url("./aileron/Aileron-Bold.otf");
+}
+@font-face {
+  font-family: AileronHeavy;
+  src: url("./aileron/Aileron-Heavy.otf");
+}
+@font-face {
+  font-family: AileronThin;
+  src: url("./aileron/Aileron-Thin.otf");
+}

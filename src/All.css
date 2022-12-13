@@ -1,0 +1,50 @@
+@import "~antd/dist/antd.css";
+@import url("./Assets/CSS/Colors.css");
+@import url("./Assets/Fonts/Fonts.css");
+@import url("./Assets/CSS/Auth/AuthDefault.css");
+@import url("./Assets/CSS/Auth/AuthSideBox.css");
+@import url("./Assets/CSS/Auth/Login.css");
+
+@import url("./Assets/CSS/Dashboard/DashboardDefault.css");
+@import url("./Assets/CSS/Dashboard/Calendar.css");
+@import url("./Assets/CSS/Dashboard/DashboardUpcomingEvents.css");
+@import url("./Assets/CSS/Dashboard/DashboardRightNav.css");
+@import url("./Assets/CSS/Dashboard/DashboardNav.css");
+@import url("./Assets/CSS/Dashboard/DashboardTopNav.css");
+@import url("./Assets/CSS/Dashboard/DashboardDate.css");
+@import url("./Assets/CSS/Dashboard/Screens/Overview.css");
+@import url("./Assets/CSS/Dashboard/Screens/Help.css");
+@import url("./Assets/CSS/Dashboard/Screens/LiveClasses.css");
+@import url("./Assets/CSS/Dashboard/Screens/Courses.css");
+@import url("./Assets/CSS/Dashboard/Screens/Mentors.css");
+@import url("./Assets/CSS/Dashboard/Screens/ProfileModal.css");
+@import url("./Assets/CSS/Dashboard/Screens/Facilitators.css");
+@import url("./Assets/CSS/Dashboard/Screens/Settings.css");
+@import url("./Assets/CSS/Dashboard/Screens/Students.css");
+@import url("./Assets/CSS/Dashboard/Screens/Training.css");
+@import url("./Assets/CSS/Dashboard/Screens/Events.css");
+
+@import url("./Assets/CSS/Course.css");
+
+@import url("./Assets/CSS/Dashboard/Screens/Small/Small-Overview.css");
+@import url("./Assets/CSS/Dashboard/Screens/Small/Small-Mentors.css");
+
+@import url("./Assets/CSS/Dashboard/Small/Small-DashboardTopNav.css");
+@import url("./Assets/CSS/Dashboard/Small/Small-DashboardRightNav.css");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: AileronRegular;
+}
+a {
+  text-decoration: none;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

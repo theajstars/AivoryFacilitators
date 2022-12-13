@@ -1,0 +1,29 @@
+.courses-container {
+}
+.courses-jumbo {
+  align-items: center;
+  justify-content: flex-end;
+}
+.courses-nav {
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.course-nav-item {
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.course-nav-item:hover,
+.course-nav-item-active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--blue-dark);
+}
+.my-courses-container {
+  margin: 60px 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.my-course-card {
+  width: fit-content;
+}

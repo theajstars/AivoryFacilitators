@@ -1,0 +1,21 @@
+@media screen and (max-width: 760px) {
+  div.mentors-screen-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.mentors-screen-column {
+    width: 100%;
+    align-items: center;
+  }
+  div.mentor-row-text {
+    max-width: 300px;
+  }
+  div.mentors-column {
+    /* width: 100%; */
+    width: 90%;
+    align-items: center;
+  }
+  div.mentor-row {
+    width: 100%;
+  }
+}
