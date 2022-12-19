@@ -4,8 +4,8 @@ import { Navigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import axios from "axios";
 
-const baseURL = `http://localhost:8080`;
-// const baseURL = `https://aivorytech.herokuapp.com`;
+// const baseURL = `http://localhost:8080`;
+const baseURL = `https://aivorytech.herokuapp.com`;
 const verifyAdminToken = async (token) => {
   const result = await axios.get(`${baseURL}/admin/verifyToken`, {
     headers: { "x-access-token": token },

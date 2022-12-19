@@ -135,12 +135,12 @@ export default function DashboardTopNav({ navtext, data }) {
               <i className="far fa-search"></i>
             </span>
           </div>
-          <span
+          {/* <span
             className="dashboard-top-nav-notification-icon flex-row"
             onClick={() => setNotificationsOpen(!isNotificationsOpen)}
           >
             <i className="fas fa-bell"></i>
-          </span>
+          </span> */}
           <motion.div
             className="notifications-container"
             animate={{

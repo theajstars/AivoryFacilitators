@@ -54,7 +54,7 @@ export default function Help() {
         <span className="help-header">What can we help you with?</span>
         <div className="flex-column help-items-column">
           <div className="flex-row help-items-row">
-            <div className="help-item-row flex-row">
+            {/* <div className="help-item-row flex-row">
               <input
                 type="checkbox"
                 name=""
@@ -79,7 +79,7 @@ export default function Help() {
                 className="help-item-checkbox"
               />
               <span className="help-item-title">Profile / Settings</span>
-            </div>
+            </div> */}
           </div>
         </div>
 

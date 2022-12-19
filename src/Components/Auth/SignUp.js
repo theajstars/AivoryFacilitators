@@ -1,12 +1,18 @@
-import Logo from "../../Assets/IMG/Logo.png";
-import GoogleIcon from "../../Assets/IMG/GoogleIcon.svg";
 import { useEffect, useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
-import { baseURL, validateEmail } from "../../App";
 import { message } from "antd";
 import Cookies from "js-cookie";
 
+import { baseURL, validateEmail } from "../../App";
+
+import Logo from "../../Assets/IMG/Logo.png";
+import GoogleIcon from "../../Assets/IMG/GoogleIcon.svg";
+
 export default function SignUp(props) {
+  const navigate = useNavigate();
   const facilitatorToken = props.token;
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -51,6 +57,7 @@ export default function SignUp(props) {
             if (res.data.auth) {
               Cookies.set("ud", res.data.token);
               message.success("Profile created successfully!");
+              navigate("/dashboard");
               // props.passRoute("dashboard");
             } else {
               message.error("There was an error creating your profile");

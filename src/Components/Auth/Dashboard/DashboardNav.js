@@ -51,21 +51,14 @@ export default function DashboardNav() {
                 <span className="dashboard-nav-item-text">Overview</span>
               </Link>
               <Link
-                to="/dashboard/profile"
-                className="dashboard-nav-item flex-row"
-              >
-                <img src={CoursesIcon} className="dashboard-nav-item-icon" />
-                <span className="dashboard-nav-item-text">Profile</span>
-              </Link>
-              <Link
-                to="/dashboard/sessions"
+                to="/dashboard/live"
                 className="dashboard-nav-item flex-row"
               >
                 <img
                   src={LiveClassesIcon}
                   className="dashboard-nav-item-icon"
                 />
-                <span className="dashboard-nav-item-text">Sessions</span>
+                <span className="dashboard-nav-item-text">Trainings</span>
               </Link>
               <Link
                 to="/dashboard/help"

@@ -106,23 +106,6 @@ export default function Training() {
     }
   };
   useEffect(() => {
-    verifyAdminToken(token).then((res) => {
-      if (!res.data.token) {
-        // Token is not valid
-        Cookies.remove("ud");
-        navigate("/auth");
-      } else {
-        //Token is valid so fetch Admin details
-        axios
-          .get(`${baseURL}/admin/profile`, {
-            headers: { "x-access-token": token },
-          })
-          .then((response) => {
-            console.log(response);
-            setAdminObject(response.data.admin);
-          });
-      }
-    });
     if (!params.trainingID) {
       navigate("/dashboard/live");
     } else {
@@ -130,7 +113,7 @@ export default function Training() {
       // Fetch training details
       axios
         .post(
-          `${baseURL}/admin/training/getDetails`,
+          `${baseURL}/training/getDetails`,
           { trainingID },
           { headers: { "x-access-token": token } }
         )
@@ -152,7 +135,7 @@ export default function Training() {
     NavTextTwo: "",
     NavTextThree: "Take a training!",
   };
-  const [isMenuOpen, setMenuOpen] = useState(true);
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -216,50 +199,40 @@ export default function Training() {
       });
   };
 
-
-
   const [messageTitle, setMessageTitle] = useState("");
   const [messageBody, setMessageBody] = useState("");
 
-
-
-
-
   const sendMessage = () => {
-      if (messageTitle.length === 0 || messageBody.length === 0) {
-        message.warning("You must complete the form");
-      } else {
-        if (
-          messageTitle.length > 0 &&
-          messageBody.length > 0
-        ) {
-          console.log({
-            messageTitle,
-            messageBody,
+    if (messageTitle.length === 0 || messageBody.length === 0) {
+      message.warning("You must complete the form");
+    } else {
+      if (messageTitle.length > 0 && messageBody.length > 0) {
+        console.log({
+          messageTitle,
+          messageBody,
+        });
+        axios
+          .post(
+            `${baseURL}/training/sendAdminMessage`,
+            {
+              trainingID: trainingDetails.trainingID,
+              title: messageTitle,
+              message: messageBody,
+            },
+            { headers: { "x-access-token": token } }
+          )
+          .then((res) => {
+            console.log(res);
+            if (res.data.auth) {
+              message.success("Your message has been delivered!");
+              setMessageTitle("");
+              setMessageBody("");
+            } else {
+              message.error("Your message could not be delivered!");
+            }
           });
-          axios
-            .post(
-              `${baseURL}/training/sendAdminMessage`,
-              {
-                trainingID: trainingDetails.trainingID,
-                title: messageTitle,
-                message: messageBody
-              },
-              { headers: { "x-access-token": token } }
-            )
-            .then((res) => {
-              console.log(res);
-              if (res.data.auth) {
-                message.success("Your message has been delivered!");
-                setMessageTitle("");
-                setMessageBody("");
-              } else {
-                message.error("Your message could not be delivered!");
-              }
-            });
-        }
       }
-
+    }
   };
 
   return (
@@ -281,52 +254,6 @@ export default function Training() {
                   >
                     {trainingDetails.trainingTitle}
                   </span>
-                  {!trainingDetails.trainingCompleted && (
-                    <>
-                      <div className="flex-row">
-                        <button
-                          className="course-register-now"
-                          onClick={() => {
-                            trainingDetails.trainingStarted
-                              ? continueTraining()
-                              : startTraining();
-                          }}
-                        >
-                          {trainingDetails.trainingStarted
-                            ? "Continue Training Now"
-                            : "Start Training"}
-                        </button>
-                        &nbsp; &nbsp; &nbsp;
-                        <Popconfirm
-                          onConfirm={completeTraining}
-                          title="Confirm training has been completed?"
-                        >
-                          <button
-                            className="course-overview-button course-overview-completed"
-                            style={{
-                              marginTop: "20px",
-                            }}
-                          >
-                            Complete training
-                          </button>
-                        </Popconfirm>
-                      </div>
-                      <center>
-                        <div className="send-student-invitation-container flex-row">
-                          <Input
-                            placeholder="Student Invitation Link"
-                            value={studentInvitationLink}
-                            onChange={(e) => {
-                              setStudentInvitationLink(e.target.value);
-                            }}
-                          />
-                          <Button onClick={sendInviteToStudents}>
-                            Send Invitation
-                          </Button>
-                        </div>
-                      </center>
-                    </>
-                  )}
                   {trainingDetails.trainingCompleted && (
                     <Tag color="#87d068">Training has been completed!</Tag>
                   )}

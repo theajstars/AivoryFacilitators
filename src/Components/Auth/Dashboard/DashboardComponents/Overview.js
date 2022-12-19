@@ -33,20 +33,25 @@ export default function Overview() {
   return (
     <div className="dashboard-screen-container flex-column">
       <br />
+      <br />
+      <br />
       <div className="mentor-overview-items flex-column">
         <div className="mentor-overview-row flex-row">
-          <div className="mentor-overview-item flex-row">
+          <div
+            className="mentor-overview-item flex-row"
+            onClick={() => navigate("/dashboard/live")}
+          >
             <div className="mentor-overview-item-left flex-column">
               <div className="mentor-overview-item-header">
-                View Scheduled Sessions
+                View My Trainings
               </div>
               <button className="mentor-overview-item-btn">
-                View Schedule
+                View Trainings
               </button>
             </div>
             <img src={CalendarImage} alt="" />
           </div>
-          <div className="mentor-overview-item flex-row">
+          {/* <div className="mentor-overview-item flex-row">
             <div className="mentor-overview-item-left flex-column">
               <div className="mentor-overview-item-header">
                 Update my availability
@@ -56,7 +61,7 @@ export default function Overview() {
               </button>
             </div>
             <img src={ClockImage} alt="" />
-          </div>
+          </div> */}
         </div>
 
         <div className="mentor-overview-row flex-row">
@@ -69,7 +74,7 @@ export default function Overview() {
             </div>
             <img src={PhoneImage} alt="" />
           </div> */}
-          <div className="mentor-overview-item flex-row">
+          {/* <div className="mentor-overview-item flex-row">
             <div className="mentor-overview-item-left flex-column">
               <div className="mentor-overview-item-header">
                 Update your Mentor Profile
@@ -84,7 +89,7 @@ export default function Overview() {
               </button>
             </div>
             <img src={ProfileImage} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

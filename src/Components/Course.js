@@ -53,7 +53,7 @@ export default function Course() {
     NavTextTwo: "Courses",
     NavTextThree: "Classes are ongoing. Join now!",
   };
-  const [isMenuOpen, setMenuOpen] = useState(true);
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };

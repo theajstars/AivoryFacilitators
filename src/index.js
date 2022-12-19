@@ -13,6 +13,7 @@ import Mentors from "./Components/Auth/Dashboard/DashboardComponents/Mentors";
 import Overview from "./Components/Auth/Dashboard/DashboardComponents/Overview";
 import Profile from "./Components/Auth/Dashboard/DashboardComponents/Profile";
 import Settings from "./Components/Auth/Dashboard/DashboardComponents/Settings";
+import Training from "./Components/Training";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -27,10 +28,11 @@ root.render(
         <Route path="live" element={<LiveClasses />} />
         <Route path="profile" element={<Profile />} />
         <Route path="mentors" element={<Mentors />} />
-
+        <Route path="live" element={<LiveClasses />} />
         <Route path="facilitators" element={<Facilitators />} />
         <Route path="settings" element={<Settings />} />
       </Route>
+      <Route path="/training/:trainingID" element={<Training />} />
     </Routes>
   </Router>
 );

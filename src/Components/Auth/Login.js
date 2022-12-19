@@ -42,7 +42,7 @@ export default function Login(props) {
             if (res.data.auth) {
               message.success("Login successful!");
               Cookies.set("ud", res.data.token);
-              // props.passRoute("dashboard");
+              props.passRoute("dashboard");
             } else {
               message.error("Invalid email and password!");
             }

@@ -18,6 +18,7 @@ import Settings from "./DashboardComponents/Settings";
 import Profile from "./DashboardComponents/Profile";
 import { baseURL } from "../../../App";
 import { message } from "antd";
+import Training from "../../Training";
 
 export default function Dashboard() {
   const location = useLocation();
@@ -26,7 +27,7 @@ export default function Dashboard() {
   const [facilitatorData, setFacilitatorData] = useState({});
   const [notifications, setNotifications] = useState([]);
 
-  const [isMenuOpen, setMenuOpen] = useState(true);
+  const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
@@ -106,6 +107,7 @@ export default function Dashboard() {
                 ></Route>
                 <Route path="/live" element={<LiveClasses />}></Route>
                 <Route path="/profile" element={<Profile />}></Route>
+                <Route path="/training" element={<Training />}></Route>
 
                 <Route path="/settings" element={<Settings />}></Route>
               </Routes>

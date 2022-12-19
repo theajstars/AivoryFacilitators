@@ -5,7 +5,7 @@
   z-index: 9999999999;
 }
 .toggle-dashboard-right-nav {
-  display: none !important;
+  display: flex !important;
   font-size: 20px;
   color: var(--blue-dark);
   position: fixed;
